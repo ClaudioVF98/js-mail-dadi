@@ -14,9 +14,9 @@ myButton.addEventListener("click",
         let userEmail = myMail.value;
         console.log(userEmail);
         if (listaInvitati.includes(userEmail)){
-            message.append ("Benvenuto!")
+            message.innerHTML = "Benvenuto!"
         } else {
-            message.append ("Non sei in lista!")
+            message.innerHTML = "Non sei in Lista!"
         }       
     }
 )

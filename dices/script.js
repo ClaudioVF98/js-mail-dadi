@@ -10,17 +10,17 @@ const message = document.querySelector (".messaggio");
 myButton.addEventListener ("click",
     function() {
         const userNum = Math.floor((Math.random() * 6) + 1);
-        user.append(userNum);
+        user.innerHTML = userNum
 
         const computerNum = Math.floor((Math.random() * 6) + 1);
-        computer.append(computerNum);
+        computer.innerHTML = computerNum
          
         if (userNum > computerNum) {
-            message.append("User vince!");
+            message.innerHTML = "User Vince!"
         } else if (computerNum > userNum) {
-            message.append("Computer vince!")
+            message.innerHTML = "Computer Vince!"
         } else {
-            message.append("Pareggio")
+            message.innerHTML = "Spareggio!"
         }
     }
 )
